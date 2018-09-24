@@ -2,5 +2,5 @@ databases {
     devDatabase = "tracker_backlog_dev"
     testDatabase = "tracker_backlog_test"
     cfDatabase = "tracker-backlog-database"
-    cfApp = "tracker-backlog"
+    cfApp = "tracker-backlog-25"
 }
