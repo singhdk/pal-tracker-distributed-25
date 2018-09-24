@@ -51,6 +51,7 @@ jobs:
         password: $CF_PASSWORD
         organization: $CF_ORG
         space: test25
+        skip_ssl_validation: true
     - stage: deploy
       language: bash
       script:
@@ -89,6 +90,6 @@ jobs:
         - sudo apt-get update
         - sudo apt-get install cf-cli
       script:
-        - cf login -a $CF_API_URL -u $CF_USERNAME -p $CF_PASSWORD -o $CF_ORG -s review
+        - cf login -a $CF_API_URL -u $CF_USERNAME -p $CF_PASSWORD -o $CF_ORG -s test25 --skip-ssl-validation
         - chmod +x gradlew
         - ./gradlew cfMigrate
