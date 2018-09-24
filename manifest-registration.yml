@@ -1,8 +1,8 @@
 applications:
-- name: tracker-registration
+- name: tracker-registration-25
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
+  - route: tracker-registration-25.apps.nonprod.dryice01.in.hclcnlabs.com
   memory: 1G
   instances: 1
   services:

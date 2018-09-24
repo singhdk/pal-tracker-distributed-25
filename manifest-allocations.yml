@@ -1,11 +1,10 @@
 applications:
-- name: tracker-allocations
+- name: tracker-allocations-25
   path: ./applications/allocations-server/build/libs/allocations-server.jar
-  routes:
-  - route: allocations-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
+  random-route: true
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN
+    REGISTRATION_SERVER_ENDPOINT: https://tracker-registration-25.apps.nonprod.dryice01.in.hclcnlabs.com
   services:
   - tracker-allocations-database
