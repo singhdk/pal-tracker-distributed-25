@@ -1,3 +1,4 @@
+3.1
 Users
 curl -i -XPOST -H"Content-Type: application/json" localhost:8083/registration -d'{"name": "Pete"}'
 Projects
@@ -10,3 +11,6 @@ Time Entries
 curl -i -XPOST -H"Content-Type: application/json" localhost:8084/time-entries/ -d"{\"projectId\": ${PROJECT_ID}, \"userId\": ${USER_ID}, \"date\": \"2015-05-17\", \"hours\": 6}"
 
 These are rest endpoint
+3.2--
+https://docs.pivotal.io/spring-cloud-services/2-0/common/client-dependencies.html
+curl https://spring-cloud-broker.apps.nonprod.dryice01.in.hclcnlabs.com/info -k

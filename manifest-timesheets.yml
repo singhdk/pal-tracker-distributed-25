@@ -4,7 +4,6 @@ applications:
   random-route: true
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: https://tracker-registration-25.apps.nonprod.dryice01.in.hclcnlabs.com
   services:
   - tracker-timesheets-database
+  - tracker-service-registry
