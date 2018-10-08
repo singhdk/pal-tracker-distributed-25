@@ -5,6 +5,8 @@ applications:
   - route: tracker-registration-25.apps.nonprod.dryice01.in.hclcnlabs.com
   memory: 1G
   instances: 1
+  env:
+    SECURITY_OAUTH2_RESOURCE_TOKEN-INFO-URI: https://oauth-server/oauth/check_token
   services:
   - tracker-registration-database
   - tracker-service-registry

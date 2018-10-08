@@ -4,6 +4,9 @@ applications:
   random-route: true
   memory: 1G
   instances: 1
+  env:
+    SECURITY_OAUTH2_RESOURCE_TOKEN-INFO-URI: https://oauth-server/oauth/check_token
+    SECURITY_OAUTH2_CLIENT_ACCESS-TOKEN-URI: https://oauth-server/oauth/token
   services:
   - tracker-allocations-database
   - tracker-service-registry
