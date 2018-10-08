@@ -7,6 +7,9 @@ applications:
   env:
     SECURITY_OAUTH2_RESOURCE_TOKEN-INFO-URI: https://oauth-server/oauth/check_token
     SECURITY_OAUTH2_CLIENT_ACCESS-TOKEN-URI: https://oauth-server/oauth/token
+    GRANT_TYPE: client_credentials
+    SECURITY_USER_NAME: actuator
+    SECURITY_USER_PASSWORD: operations4red
   services:
   - tracker-allocations-database
   - tracker-service-registry
