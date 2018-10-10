@@ -6,7 +6,6 @@ applications:
   memory: 1G
   instances: 1
   env:
-    SECURITY_OAUTH2_RESOURCE_TOKEN-INFO-URI: https://oauth-server/oauth/check_token
     GRANT_TYPE: client_credentials
     SECURITY_USER_NAME: actuator
     SECURITY_USER_PASSWORD: operations4red
